@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:cee_prototype/data/plunge.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:path/path.dart';
 import 'package:sembast/sembast.dart';
@@ -13,4 +14,6 @@ class PlungeDB {
   factory PlungeDB() {
     return _singleton;
   }
+
+  deletePlunge(Plunge plunge) {}
 }
