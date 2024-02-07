@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/foundation.dart';
 
 class Plunge {
@@ -6,7 +8,7 @@ class Plunge {
   DateTime dateTimeStarted;
   DateTime dateTimeCompleted;
   int duration;
-  int temperature;
+  String temperature;
   String plungeMethod;
   String shiver;
 
