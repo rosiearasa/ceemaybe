@@ -36,10 +36,10 @@ class PlungeBloc {
 
   void _deletePlunge(Plunge plunge){
 
-    db.deletePlunge(plunge).the((result){
+    db.deletePlunge(plunge).then((result){
       getPlunges();
     });
   }
 
-  
+
 }

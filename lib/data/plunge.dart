@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:flutter/foundation.dart';
 
 class Plunge {
+  late int id;
   Float64List locationLatitide;
   Float64List locationLongitude;
   DateTime dateTimeStarted;
@@ -12,8 +13,15 @@ class Plunge {
   String plungeMethod;
   String shiver;
 
-  Plunge(this.locationLatitide, this.locationLongitude, this.dateTimeStarted,
-      this.dateTimeCompleted, this.duration,this.temperature, this.plungeMethod, this.shiver);
+  Plunge(
+      this.locationLatitide,
+      this.locationLongitude,
+      this.dateTimeStarted,
+      this.dateTimeCompleted,
+      this.duration,
+      this.temperature,
+      this.plungeMethod,
+      this.shiver);
 
   Map<String, dynamic> toMap() {
     return {
