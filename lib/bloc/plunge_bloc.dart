@@ -4,8 +4,8 @@ import '../data/plungedata_db.dart';
 
 //interface between UI AND DB
 class PlungeBloc {
-  PlungeDB db;
-  List<Plunge> plungeList;
+  late PlungeDB db;
+  late List<Plunge> plungeList;
 
 //set up a broadcast stream for mltiple listeners
   final _plungesStreamController = StreamController<List<Plunge>>.broadcast();
@@ -42,4 +42,16 @@ class PlungeBloc {
   }
 
 
+}
+
+class _plungesDeleteController {
+  static var sink;
+}
+
+mixin _plungesUpdateController {
+  static var sink;
+}
+
+mixin _plungesInsertController {
+  static var sink;
 }
